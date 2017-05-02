@@ -39,12 +39,24 @@ commands:
         permission: simple.gamemode
         permission-message: You do not have the necessary permissions to alter your gamemode.
     gm:
-        description: Ihanges your Gamemode.
+        description: Changes your Gamemode.
         permission: simple.gamemode
         permission-message: You do not have the necessary permissions to alter your gamemode.
     gamemode:
-        description:
+        description: Changes your Gamemode.
         permission: simple.gamemode
         permission-message: You do not have the necessary permissions to alter your gamemode.
+    clearchat:
+        description: Clears chat.
+        permission: simple.clearchat
+        permission-message: You do not have the necessary permissions to clear the chat.
+    cc:
+        description: Clears chat.
+        permission: simple.clearchat
+        permission-message: You do not have the necessary permissions to clear the chat.
+    clearc:
+        description: Clears chat.
+        permission: simple.clearchat
+        permission-message: You do not have the necessary permissions to clear the chat.
         
     

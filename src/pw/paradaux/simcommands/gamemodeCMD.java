@@ -7,6 +7,7 @@ import org.bukkit.entity.Player;
 
 import net.md_5.bungee.api.ChatColor;
 import pw.paradaux.simapi.gamemodeHandler;
+import pw.paradaux.simapi.prefix;
 
 public class gamemodeCMD implements CommandExecutor {
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
@@ -36,7 +37,10 @@ public class gamemodeCMD implements CommandExecutor {
 					}
 					if(args[0].equalsIgnoreCase("sp") || args[0].equalsIgnoreCase("spectator") || args[0].equalsIgnoreCase("3")) {
 						gamemodeHandler.setGM(3, p);
+					} else {
+						prefix.it("Invalid Gamemode / No Specified Gamemode.", p);
 					}
+						
 				}
 			}
 			return false;
