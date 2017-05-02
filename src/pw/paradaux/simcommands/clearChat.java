@@ -18,7 +18,7 @@ public class clearChat implements CommandExecutor {
 		} else if (sender.hasPermission("simple.clearchat")) {
 			if (cmd.getName().equalsIgnoreCase("clearchat") || cmd.getName().equalsIgnoreCase("cc") || cmd.getName().equalsIgnoreCase("clearc")) {
 			chatHandler.clearChat(100, p);
-			prefix.bIt(p.getDisplayName() + "has cleared chat!", p);
+			prefix.bIt(p.getDisplayName() + " has cleared chat!", p);
 			}
 		} return false;
 	}

@@ -9,7 +9,7 @@ public class prefix {
 	public static void bIt(String text, Player player) {
 		Bukkit.broadcastMessage(ChatColor.GOLD +  "[Simple] " + ChatColor.YELLOW + text);
 	}
-	public static void headIt(String text, Player player) {
+	public static void headIt(String text, Player player) {	
 		player.sendMessage(ChatColor.YELLOW + "---" + " " + ChatColor.GOLD + text + ChatColor.YELLOW + "---");
 	}
 	public static void seperate(String text, String text2, Player player) {
