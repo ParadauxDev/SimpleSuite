@@ -1,55 +1,49 @@
 name: SimpleSuite
 main: pw.paradaux.simsuite.SimpleSuite
-version: 0.01
+version: 0.025
 commands:
     creative:
         description: Changes your Gamemode.
-        usage: /creative
         permission: simple.gamemode
         permission-message: You do not have the necessary permissions to alter your gamemode.
     survival:
         description: Changes your Gamemode.
-        usage: /survival
         permission: simple.gamemode
         permission-message: You do not have the necessary permissions to alter your gamemode.
     adventure:
         description: Changes your Gamemode.
-        usage: /adventure
         permission: simple.gamemode
         permission-message: You do not have the necessary permissions to alter your gamemode.
     spectator:
         description: Changes your Gamemode.
-        usage: /spectator
         permission: simple.gamemode
         permission-message: You do not have the necessary permissions to alter your gamemode.
     gmc:
         description: Changes your Gamemode.
-        usage: /gmc
         permission: simple.gamemode
         permission-message: You do not have the necessary permissions to alter your gamemode.
     gms:
         description: Changes your Gamemode.
-        usage: /gms
         permission: simple.gamemode
         permission-message: You do not have the necessary permissions to alter your gamemode.
     gmc:
         description: Changes your Gamemode.
-        usage: /gmc
+        permission: simple.gamemode
+        permission-message: You do not have the necessary permissions to alter your gamemode.
+    gma:
+        description: Changes your Gamemode.
         permission: simple.gamemode
         permission-message: You do not have the necessary permissions to alter your gamemode.
     gmsp:
         description: Changes your Gamemode.
-        usage: /gmsp
         permission: simple.gamemode
         permission-message: You do not have the necessary permissions to alter your gamemode.
     gm:
         description: Ihanges your Gamemode.
-        usage: /gm <arguments>
         permission: simple.gamemode
         permission-message: You do not have the necessary permissions to alter your gamemode.
     gamemode:
         description:
-        usage: /gamemode <arguments>
         permission: simple.gamemode
         permission-message: You do not have the necessary permissions to alter your gamemode.
         
