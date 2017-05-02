@@ -15,16 +15,24 @@ public class simpleCMD {
 			return false;
 		} if (cmd.getName().equalsIgnoreCase("simple")){
 			if (args.length > 0) {
-				prefix.headIt(), p);
-				sender.sendMessage("");
-				sender.sendMessage("");
-				sender.sendMessage("");
-				sender.sendMessage("");
-				sender.sendMessage("");
-				sender.sendMessage("");
-				
+				if(args[0].equalsIgnoreCase("help")) {
+					prefix.headIt("SimpleSuite", p);
+					prefix.seperate("/simple gamemode", "Get help changing your gamemode.", p);
+					prefix.seperate("/simple reload", "Reload SimpleSuite", p);
+					prefix.seperate("/simple info", "Get Information", p);
+					prefix.seperate("/simple fun", "Fun Commands", p);
+					prefix.seperate("/simplemod", "Moderator Commands", p);
+					prefix.seperate("/simpleadmin", "Administrator Commands", p);
+					prefix.headIt("SimpleSuite", p);}
 			} else {
-				
+				prefix.headIt("SimpleSuite", p);
+				prefix.seperate("/simple gamemode", "Get help changing your gamemode.", p);
+				prefix.seperate("/simple reload", "Reload SimpleSuite", p);
+				prefix.seperate("/simple info", "Get Information", p);
+				prefix.seperate("/simple fun", "Fun Commands", p);
+				prefix.seperate("/simplemod", "Moderator Commands", p);
+				prefix.seperate("/simpleadmin", "Administrator Commands", p);
+				prefix.headIt("SimpleSuite", p);
 			}
 			}
 		return false;

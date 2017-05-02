@@ -58,5 +58,7 @@ commands:
         description: Clears chat.
         permission: simple.clearchat
         permission-message: You do not have the necessary permissions to clear the chat.
+    simple:
+        description: Information regarding SimpleSuite
         
     
