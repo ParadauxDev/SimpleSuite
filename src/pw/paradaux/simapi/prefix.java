@@ -13,6 +13,6 @@ public class prefix {
 		player.sendMessage(ChatColor.YELLOW + "---" + " " + ChatColor.GOLD + text + ChatColor.YELLOW + "---");
 	}
 	public static void seperate(String text, String text2, Player player) {
-		player.sendMessage(ChatColor.GOLD + text + ChatColor.WHITE + text);
+		player.sendMessage(ChatColor.GOLD + text + " " + ChatColor.WHITE + text2);
 	}
 }
