@@ -20,7 +20,7 @@ public class simpleCMD implements CommandExecutor {
 				} else {
 					languageControl.simpleMenu(sender);
 				}
-			}
+			} languageControl.simpleMenu(sender);
 			return false;
 		}
 		return false;
