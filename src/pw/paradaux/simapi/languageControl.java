@@ -40,4 +40,10 @@ public class languageControl {
 		prefix.seperate("/simplemod", "Moderator Commands", p);
 		prefix.seperate("/simpleadmin", "Administrator Commands", p);
 		prefix.headIt("SimpleSuite", p);}
+	public static void chatMuteOn(Object sender) {
+		prefix.it("Chat has been muted", sender);
+	}
+	public static void chatMuteOff(Object sender) {
+		prefix.it("Chat has been unmuted", sender);
+	}
 }
