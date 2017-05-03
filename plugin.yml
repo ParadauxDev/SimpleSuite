@@ -60,5 +60,9 @@ commands:
         permission-message: You do not have the necessary permissions to clear the chat.
     simple:
         description: Information regarding SimpleSuite
+    mutechat:
+        description: Mutes the entire chat.
+        permission: simple.mutechat
+        permission-message: You do not have the necessary permissions to mute the chat.
         
     
