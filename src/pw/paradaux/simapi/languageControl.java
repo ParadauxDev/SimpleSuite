@@ -1,17 +1,8 @@
 package pw.paradaux.simapi;
 
-import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public class languageControl {
-	public static void sndMsg(String text, Object sender) {
-	    if(sender instanceof CommandSender){  
-	    	((CommandSender) sender).sendMessage(text);
-	    }  
-	    else if(sender instanceof Player){
-	    	((Player) sender).sendMessage(text);
-	   }
-	}
 	public static void gamemodeCreative(Object sender) {
 		prefix.it("Your gamemode has been updated to Creative mode.", sender);
 	}
@@ -45,5 +36,8 @@ public class languageControl {
 	}
 	public static void chatMuteOff(Object sender) {
 		prefix.it("Chat has been unmuted", sender);
+	}
+	public static void gamemodeUpdateFailed(Object sender) {
+		prefix.it("Invalid user.", sender);
 	}
 }
