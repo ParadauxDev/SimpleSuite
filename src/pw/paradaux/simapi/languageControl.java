@@ -40,4 +40,5 @@ public class languageControl {
 	public static void gamemodeUpdateFailed(Object sender) {
 		prefix.it("Invalid user.", sender);
 	}
+	
 }
