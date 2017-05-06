@@ -16,15 +16,15 @@ public class gamemodeCMD implements CommandExecutor {
 			return false;
 		} else if (sender.hasPermission("simple.gamemode")) {
 			Player p = (Player) sender;
-			if (cmd.getName().equalsIgnoreCase("gmc") || cmd.getName().equalsIgnoreCase("creative")) {
+			if (label.equalsIgnoreCase("gmc") || label.equalsIgnoreCase("creative")) {
 				gamemodeHandler.setGM(1, p);
-			} else if (cmd.getName().equalsIgnoreCase("gms") || cmd.getName().equalsIgnoreCase("survival")) {
+			} else if (label.equalsIgnoreCase("gms") || label.equalsIgnoreCase("survival")) {
 				gamemodeHandler.setGM(0, p);
-			} else if (cmd.getName().equalsIgnoreCase("gma") || cmd.getName().equalsIgnoreCase("adventure")) {
+			} else if (label.equalsIgnoreCase("gma") || label.equalsIgnoreCase("adventure")) {
 				gamemodeHandler.setGM(2, p);
-			} else if (cmd.getName().equalsIgnoreCase("gmsp") || cmd.getName().equalsIgnoreCase("spectator")) {
+			} else if (label.equalsIgnoreCase("gmsp") || label.equalsIgnoreCase("spectator")) {
 				gamemodeHandler.setGM(3, p);
-			} else if (cmd.getName().equalsIgnoreCase("gm") || cmd.getName().equalsIgnoreCase("gamemode")) {
+			} else if (label.equalsIgnoreCase("gm") || label.equalsIgnoreCase("gamemode")) {
 				if (args.length > 0) {
 					if(args[0].equalsIgnoreCase("c") || args[0].equalsIgnoreCase("creative") || args[0].equalsIgnoreCase("1")) {
 						gamemodeHandler.setGM(1, p);
