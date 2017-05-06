@@ -16,7 +16,7 @@ public class muteCMD implements CommandExecutor {
 		} else {
 			if (sender.hasPermission("simple.mutechat")) {
 				if (cmd.getName().equalsIgnoreCase("mutechat")) {
-					if (chatHandler.getChatStatus() == false) {
+					if (!chatHandler.getChatStatus()) {
 						chatHandler.setChatMuted(true);
 						languageControl.chatMuteOn(sender);
 					} else {

@@ -10,19 +10,10 @@ public class SimpleSuite extends JavaPlugin {
 	public void onEnable() {
 		//Gamemode added v0.01
 		this.getCommand("gamemode").setExecutor(new gamemodeCMD());
-		this.getCommand("gm").setExecutor(new gamemodeCMD());
-		this.getCommand("creative").setExecutor(new gamemodeCMD());
-		this.getCommand("survival").setExecutor(new gamemodeCMD());
-		this.getCommand("adventure").setExecutor(new gamemodeCMD());
-		this.getCommand("spectator").setExecutor(new gamemodeCMD());
-		this.getCommand("gmc").setExecutor(new gamemodeCMD());
-		this.getCommand("gms").setExecutor(new gamemodeCMD());
-		this.getCommand("gma").setExecutor(new gamemodeCMD());
-		this.getCommand("gmsp").setExecutor(new gamemodeCMD());
+		this.getCommand("gamemode").setAliases(Arrays.asList("gm", "creative","survival", "adventure", "spectator", "gmc", "gms", "gma", "gmsp"));
 		//Clearchat added v0.03
 		this.getCommand("clearchat").setExecutor(new clearChat());
-		this.getCommand("clearc").setExecutor(new clearChat());
-		this.getCommand("cc").setExecutor(new clearChat());
+		this.getCommand("clearchat").setAliases(Arrays.asList("clearc", "cc"));
 		//Simple Main Commands added v0.03
 		this.getCommand("simple").setExecutor(new simpleCMD());
 		//chatEvents for chatHandler API added 0.03
