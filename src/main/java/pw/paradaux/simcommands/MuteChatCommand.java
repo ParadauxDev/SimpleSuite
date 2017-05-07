@@ -12,7 +12,7 @@ public class MuteChatCommand extends CommandBase {
 	}
 
 	@Override
-	public CommandResult run(CommandSender sender, String[] args, String label) {
+	public CommandResult run(CommandSender sender, String[] args) {
 		if(ChatHandler.isChatMuted())
         {
             ChatHandler.setChatMuted(true);

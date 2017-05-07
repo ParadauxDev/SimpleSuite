@@ -9,8 +9,8 @@ public class SimpleSuiteCommand extends CommandBase {
 	}
 
 	@Override
-	public CommandResult run(CommandSender sender, String[] args, String label) {
-		sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&6Version &8>> &7You're running SimpleSuite v0.4.1. Developed by Paradaux and IntelInside. For support, wiki, source code, and more, visit &6https://github.com/ParadauxDev/SimpleSuite&7."));
+	public CommandResult run(CommandSender sender, String[] args) {
+		sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&6Version &8>> &7You're running SimpleSuite v.03. Developed by Paradaux and IntelInside. For support, wiki, source code, and more, visit &6https://github.com/ParadauxDev/SimpleSuite&7."));
 		return CommandResult.SUCCESS;
 	}
 }

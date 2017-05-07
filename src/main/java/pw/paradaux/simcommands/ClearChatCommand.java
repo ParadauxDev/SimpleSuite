@@ -10,7 +10,7 @@ public class ClearChatCommand extends CommandBase {
     }
 
     @Override
-    public CommandResult run(CommandSender sender, String[] args, String label) {
+    public CommandResult run(CommandSender sender, String[] args) {
         for(int i = 0; i <= 100; i++)
         {
             Bukkit.broadcastMessage("");

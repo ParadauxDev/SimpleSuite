@@ -1,6 +1,6 @@
 name: SimpleSuite
 main: pw.paradaux.simsuite.SimpleSuite
-version: 0.4.1
+version: 0.04
 commands:
     gamemode:
         description: Changes your Gamemode.

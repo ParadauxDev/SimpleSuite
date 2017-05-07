@@ -16,7 +16,7 @@ public class GamemodeCommand extends CommandBase {
     }
 
     @Override
-    public CommandResult run(CommandSender sender, String[] args, String label) {
+    public CommandResult run(CommandSender sender, String[] args) {
         if(args.length == 0 || args.length > 2)
         {
             return CommandResult.INVALID_ARGS;

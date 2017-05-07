@@ -36,7 +36,7 @@ public class SimpleSuite extends JavaPlugin {
 		getServer().getPluginManager().registerEvents(new ChatHandler(), this);
 		this.getCommand("mutechat").setExecutor(new MuteChatCommand());
 
-		// Message Command (added v.4)
+		// Message Command (added v.04)
         this.getCommand("msg").setExecutor(new MessageCommand());
         this.getCommand("msg").setAliases(Arrays.asList("w", "whisper", "message", "t", "tell"));
 

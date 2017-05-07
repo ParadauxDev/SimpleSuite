@@ -11,7 +11,7 @@ public class MessageCommand extends CommandBase {
     }
 
     @Override
-    public CommandResult run(CommandSender sender, String[] args, String label) {
+    public CommandResult run(CommandSender sender, String[] args) {
         if(args.length > 1)
         {
             Player p = Bukkit.getPlayer(args[0]);
@@ -25,7 +25,6 @@ public class MessageCommand extends CommandBase {
                 String message = sb.toString().trim();
 
                 p.sendMessage(SimpleSuite.getMessage("message").replace("{sender}", sender.getName()).replace("{recipient}", p.getName()).replace("{message}", message));
-                sender.sendMessage(SimpleSuite.getMessage("message").replace("{sender}", sender.getName()).replace("{recipient}", p.getName()).replace("{message}", message));
             }
             else
             {

@@ -5,7 +5,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 
 public class ChatHandler implements Listener {
-	private static boolean chatMuted = false;
+	public static boolean chatMuted = false;
 
 	@EventHandler
 	public void onChat(AsyncPlayerChatEvent event) {
@@ -13,7 +13,6 @@ public class ChatHandler implements Listener {
 			event.setCancelled(true);
 		}
 	}
-
     public static void setChatMuted(boolean value) {
         chatMuted = value;
     }
