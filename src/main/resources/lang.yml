@@ -1,0 +1,10 @@
+# SimpleSuite messages.
+noPerms: '&4Error &8>> &7Looks like you don''t have the proper permissions to perform this action.'
+notPlayer: '&4Error &8>> &7You need to be a player to use that command.'
+selfGamemodeChanged: '&6Gamemode &8>> &7Your gamemode has been changed to &6{gamemode}&7.'
+otherGamemodeChanged: '&6Gamemode &8>> &6{user}&7''s gamemode has been changed to &6{gamemode}&7.'
+selfGamemodeChangedByOther: '&6Gamemode &8>> &7Your gamemode has been changed to &6{gamemode} &7by &6{by}&7.'
+chatMute: '&6Chat &8>> &7The chat was &6{action} &7by &6{by}&7.'
+clearChatBroadcast: '&6Chat &8>> &7The chat has been cleared by &6{by}&7.'
+invalidArgs: '&4Error &8>> &7Something went wrong processing your command. The correct usage is &c{usage}&7.'
+message: '&6{sender} &8>> &6{recipient} &7{message}'
