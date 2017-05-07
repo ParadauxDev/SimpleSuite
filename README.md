@@ -39,6 +39,6 @@ Coming Soon
 
 | Version| Download |
 | ------ | ------ |
-| 0.4 | Coming Soon    |
+| 0.4 | [Download](https://github.com/ParadauxDev/SimpleSuite/releases/tag/0.4)    |
 | 0.3 | **DEPREACHED** |
 | 0.2 | **DEPREACHED** |
