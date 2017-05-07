@@ -1,22 +1,17 @@
 name: SimpleSuite
 main: pw.paradaux.simsuite.SimpleSuite
-version: 0.025
+version: 0.04
 commands:
     gamemode:
         description: Changes your Gamemode.
-        permission: simple.gamemode
         aliases: [gm, gma, gms, gmc, gmsp,spectator, adventure, survival, creative]
-        permission-message: You do not have the necessary permissions to alter your gamemode.
     clearchat:
         description: Clears chat.
-        permission: simple.clearchat
         aliases: [cc, clearc]
-        permission-message: You do not have the necessary permissions to clear the chat.
     simple:
         description: Information regarding SimpleSuite
     mutechat:
         description: Mutes the entire chat.
-        permission: simple.mutechat
-        permission-message: You do not have the necessary permissions to mute the chat.
-        
-    
+    msg:
+        description: Message another player!
+        aliases: [t, tell, w, whisper, message]
