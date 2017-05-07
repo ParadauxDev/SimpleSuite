@@ -34,7 +34,7 @@ public abstract class CommandBase implements CommandExecutor {
                 }
                 else
                 {
-                    result = run(commandSender, strings);
+                    result = run(commandSender, strings, s);
                 }
             }
             else
@@ -59,7 +59,7 @@ public abstract class CommandBase implements CommandExecutor {
         return false;
     }
 
-    public abstract CommandResult run(CommandSender sender, String[] args);
+    public abstract CommandResult run(CommandSender sender, String[] args, String label);
 
     public enum CommandResult
     {
