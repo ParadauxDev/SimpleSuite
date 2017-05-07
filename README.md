@@ -1,7 +1,7 @@
 # SimpleSuite
-The Simple, all in one replacement for the now dead project that was Essentials. Take back control the right way using the simplier, SimpleSuite
+The Simple, all in one replacement for the now dead project that was Essentials. Take back control the right way using the simplier, SimpleSuite.
 
-[![N|Solid](arthorian.com/ppa.jpg)](https://arthorian.com)
+[![N|Solid](https://arthorian.com/ppa.jpg)](https://arthorian.com)
 
 ## Installation
 
