@@ -40,6 +40,10 @@ public class SimpleSuite extends JavaPlugin {
         this.getCommand("msg").setExecutor(new MessageCommand());
         this.getCommand("msg").setAliases(Arrays.asList("w", "whisper", "message", "t", "tell"));
 
+        // Reply Command (added v.5)
+        this.getCommand("reply").setExecutor(new ReplyCommand());
+        this.getCommand("reply").setAliases(Arrays.asList("r"));
+
         loadFiles();
 	}
 

@@ -1,6 +1,6 @@
 name: SimpleSuite
 main: pw.paradaux.simsuite.SimpleSuite
-version: 0.4.1
+version: 0.5
 commands:
     gamemode:
         description: Changes your Gamemode.
@@ -15,3 +15,6 @@ commands:
     msg:
         description: Message another player!
         aliases: [t, tell, w, whisper, message]
+    reply:
+        description: Reply to a player.
+        aliases: [r]
