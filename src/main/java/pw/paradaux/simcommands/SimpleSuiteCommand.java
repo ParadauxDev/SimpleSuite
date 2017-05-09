@@ -1,4 +1,4 @@
-package pw.paradaux.simcommands;
+package main.java.pw.paradaux.simcommands;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;

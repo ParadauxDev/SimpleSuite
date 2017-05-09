@@ -1,4 +1,4 @@
-package pw.paradaux.simapi;
+package main.java.pw.paradaux.simapi;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
