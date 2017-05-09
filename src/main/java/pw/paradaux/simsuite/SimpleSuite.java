@@ -22,30 +22,23 @@ public class SimpleSuite extends JavaPlugin {
 
 	public void onEnable() {
 	    instance = this;
-
 		//Gamemode added v0.01
 		this.getCommand("gamemode").setExecutor(new GamemodeCommand());
 		this.getCommand("gamemode").setAliases(Arrays.asList("gm", "creative", "survival", "adventure", "spectator", "gmc", "gms", "gma", "gmsp"));
-
 		//Clearchat added v0.03
 		this.getCommand("clearchat").setExecutor(new ClearChatCommand());
 		this.getCommand("clearchat").setAliases(Arrays.asList("clearc", "cc"));
-
 		//Simple Main Commands added v0.03
 		this.getCommand("simple").setExecutor(new SimpleSuiteCommand());
-
 		//chatEvents for ChatHandler API added 0.03
 		getServer().getPluginManager().registerEvents(new ChatHandler(), this);
 		this.getCommand("mutechat").setExecutor(new MuteChatCommand());
-
 		// Message Command (added v.4)
         this.getCommand("msg").setExecutor(new MessageCommand());
         this.getCommand("msg").setAliases(Arrays.asList("w", "whisper", "message", "t", "tell"));
-
         // Reply Command (added v.5)
         this.getCommand("reply").setExecutor(new ReplyCommand());
         this.getCommand("reply").setAliases(Arrays.asList("r"));
-
         loadFiles();
 	}
 
@@ -65,7 +58,6 @@ public class SimpleSuite extends JavaPlugin {
         config.options().copyDefaults(true);
         saveConfig();
         configFile = new File(getDataFolder(), "config.yml");
-
         lang = YamlConfiguration.loadConfiguration(getResource("lang.yml"));
     }
 }
