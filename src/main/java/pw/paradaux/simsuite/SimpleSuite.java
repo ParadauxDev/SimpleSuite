@@ -1,12 +1,12 @@
-package main.java.pw.paradaux.simsuite;
+package pw.paradaux.simsuite;
 
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import main.java.pw.paradaux.simapi.ChatHandler;
-import main.java.pw.paradaux.simcommands.*;
+import pw.paradaux.simapi.ChatHandler;
+import pw.paradaux.simcommands.*;
 
 import java.io.File;
 import java.util.Arrays;
@@ -15,10 +15,8 @@ public class SimpleSuite extends JavaPlugin {
     public static SimpleSuite instance;
     private FileConfiguration config;
     private FileConfiguration lang;
-    @SuppressWarnings("unused") // Temperary fix whilst unused
-	private File configFile;
-    @SuppressWarnings("unused")
-	private File langFile;
+    private File configFile;
+    private File langFile;
 
 	public void onEnable() {
 	    instance = this;
@@ -51,8 +49,7 @@ public class SimpleSuite extends JavaPlugin {
         return ChatColor.translateAlternateColorCodes('&', SimpleSuite.instance.lang.getString(type));
     }
 
-    @SuppressWarnings("deprecation")
-	public void loadFiles()
+    public void loadFiles()
     {
         config = getConfig();
         config.options().copyDefaults(true);

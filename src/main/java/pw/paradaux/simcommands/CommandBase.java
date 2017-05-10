@@ -1,10 +1,10 @@
-package main.java.pw.paradaux.simcommands;
+package pw.paradaux.simcommands;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import main.java.pw.paradaux.simsuite.SimpleSuite;
+import pw.paradaux.simsuite.SimpleSuite;
 
 public abstract class CommandBase implements CommandExecutor {
     private String command;
@@ -54,8 +54,6 @@ public abstract class CommandBase implements CommandExecutor {
             case INVALID_ARGS:
                 commandSender.sendMessage(SimpleSuite.getMessage("invalidArgs").replace("{usage}", usage));
                 break;
-            default:
-            	break;
         }
 
         return false;

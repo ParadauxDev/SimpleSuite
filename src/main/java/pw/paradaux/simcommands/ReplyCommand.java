@@ -1,9 +1,10 @@
-package main.java.pw.paradaux.simcommands;
+package pw.paradaux.simcommands;
 
+import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import main.java.pw.paradaux.simapi.ChatHandler;
-import main.java.pw.paradaux.simsuite.SimpleSuite;
+import pw.paradaux.simapi.ChatHandler;
+import pw.paradaux.simsuite.SimpleSuite;
 
 public class ReplyCommand extends CommandBase {
     public ReplyCommand() {

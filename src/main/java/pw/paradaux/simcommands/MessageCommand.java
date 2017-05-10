@@ -1,10 +1,10 @@
-package main.java.pw.paradaux.simcommands;
+package pw.paradaux.simcommands;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import main.java.pw.paradaux.simsuite.SimpleSuite;
-import main.java.pw.paradaux.simapi.ChatHandler;
+import pw.paradaux.simapi.ChatHandler;
+import pw.paradaux.simsuite.SimpleSuite;
 
 public class MessageCommand extends CommandBase {
     public MessageCommand() {
@@ -25,7 +25,7 @@ public class MessageCommand extends CommandBase {
                 }
                 String message = sb.toString().trim();
 
-                	ChatHandler.setLastMessagedPlayer((Player) sender, p);
+                ChatHandler.setLastMessagedPlayer((Player) sender, p);
 
                 p.sendMessage(SimpleSuite.getMessage("message").replace("{sender}", sender.getName()).replace("{recipient}", p.getName()).replace("{message}", message));
                 sender.sendMessage(SimpleSuite.getMessage("message").replace("{sender}", sender.getName()).replace("{recipient}", p.getName()).replace("{message}", message));

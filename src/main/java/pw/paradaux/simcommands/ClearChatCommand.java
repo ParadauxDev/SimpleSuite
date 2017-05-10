@@ -1,8 +1,8 @@
-package main.java.pw.paradaux.simcommands;
+package pw.paradaux.simcommands;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
-import main.java.pw.paradaux.simsuite.SimpleSuite;
+import pw.paradaux.simsuite.SimpleSuite;
 
 public class ClearChatCommand extends CommandBase {
     public ClearChatCommand() {
